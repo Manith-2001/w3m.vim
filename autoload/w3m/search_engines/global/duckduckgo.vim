@@ -1,4 +1,4 @@
-let s:engine = w3m#search_engine#Init('duck', 'https://duckduckgo.com/?q=%s')
+let s:engine = w3m#search_engine#Init('duck', 'https://lite.duckduckgo.com/lite/?q="%s"')
 
 function! s:engine.preproc()
   let s:user_agent_backup = g:user_agent
